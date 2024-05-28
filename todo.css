@@ -1,0 +1,177 @@
+body
+{
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:70px;
+  width:650px;
+  height:660px;
+  background-image:linear-gradient(to bottom,rgb(224, 158, 169),rgb(186, 105, 128),rgb(163, 95, 163),rgb(197, 135, 231));
+  border:2px solid whitesmoke;
+  box-shadow:4px 4px 4px silver;
+}
+img
+{
+    height:180px;
+    width:650px;
+    filter:blur(1px);
+}
+#ribbon
+{
+ position:absolute;
+ top:20px;
+ right:425px;
+ height:35px;
+ width:150px; 
+ padding-top:6px;
+ color:white;
+ text-align:center;
+ font-size:20px;
+ font-family:'Segoe UI';
+ font-weight:600;
+ background-color:rgb(171, 121, 55);
+}
+#up,#down
+{
+ position:absolute;
+ right:0px;
+ border-width:5px;
+ border-style:solid;
+}
+#up
+{
+ top:-8px;
+ border-color:transparent transparent rgb(171, 121, 55) rgb(171, 121, 55);
+}
+#down
+{
+ bottom:-8px;
+ border-color:rgb(171, 121, 55) transparent transparent rgb(171, 121, 55);
+}
+#ribbon::before
+{
+  content:"";
+  position:absolute;
+  top:1px;
+  left:-25px;
+  border-style:solid;
+  border-width:20px;
+  border-color:rgb(171, 121, 52) rgb(171, 121, 43) rgb(171, 121, 55) transparent;
+}
+#box
+{
+  background-color:rgb(234, 211, 153);
+  width:650px;
+  height:500px;
+  margin-top:-25px;
+}
+#headings
+{
+  color:rgb(61, 56, 56);
+  line-height:8px;
+  padding-top:15px;
+  padding-left:5px;
+}
+#task
+{ 
+  position:relative;
+}
+#entry
+{
+  width:300px;
+  height:25px;
+  color:grey;
+  border:2px solid white;
+  border-radius:10px;
+  margin-top:10px;
+  margin-left:15px;
+}
+::placeholder
+{
+ color:gray;
+ padding-left:10px;
+}
+.fa-tasks
+{
+  position:absolute;
+  right:340px;
+  top:17px;
+  color:black;
+  height:20px;
+  width:20px;
+  color:rgb(67, 111, 113);
+} 
+input[type="date"]
+{
+  width:200px;
+  height:25px;
+  margin-left:10px;
+  border:2px solid white;
+  border-radius:10px;
+  color:gray;
+  padding-left:10px;
+}
+::-webkit-calendar-picker-indicator
+ {
+   height:15px;
+   width:18px;
+   filter:invert(100%);
+   background-color:rgb(220, 135, 65);   /*change color because of invert*/
+   padding:10px;
+   cursor:pointer;
+ }
+#addbtn
+{
+  width:70px;
+  height:25px;
+  border-radius:5%;
+  background-color:rgb(44, 118, 44);
+  border:none;
+  box-shadow:3px 3px 2px rgb(176, 164, 164);
+  color:white;
+  margin-left:13px;
+  cursor:pointer;
+}
+#wrapper
+{
+  margin-top:10px;
+  margin-bottom:15px;
+}
+.enterbtn
+{
+  display:inline-block;
+  width:360px;
+  background-color:white;
+  margin-left:80px;
+}
+.editbtn,.deletebtn
+{
+  height:28px;
+  width:50px;
+  margin-left:-4px;
+  background-color:rgb(74, 205, 161);
+  color:white;
+  border:none;
+  box-shadow:3px 3px 2px rgb(193, 179, 179);
+  cursor:pointer;
+}
+.deletebtn
+{
+  background-color:rgb(226, 65, 65);
+  margin-left:-2px;
+}
+.fa-check-circle
+{
+  color:rgb(154, 95, 209);
+  margin:5px;
+  margin-left:10px;
+}
+.fa-edit,.fa-trash
+{
+  font-size:16px;
+}
+#inner
+{
+  margin-top:20px;
+  height:348px;
+  overflow-y:scroll;
+}
