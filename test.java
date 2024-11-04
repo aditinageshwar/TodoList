@@ -7,11 +7,10 @@ class test
       System.out.println("Enter String to check: ");
       String str = sc.next();
 
-      char[] arr = str.toCharArray();
       int i,j;
       for(i=0, j=str.length()-1; i<j; i++,j--)
       {
-        if(arr[i] != arr[j])
+        if(str.charAt(i) != str.charAt(j))
         {
           System.out.println("String is not palindrome");
           break;   
